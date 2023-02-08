@@ -1,0 +1,23 @@
+<template>
+  <div class="edit">
+    <create-or-edit is-edit :course-id="courseId"></create-or-edit>
+  </div>
+</template>
+
+<script>
+import CreateOrEdit from './components/CreateOrEdit.vue'
+export default {
+  name: 'CourseEdit',
+  props: {
+    courseId: {
+      type: [Number, String],
+      required: true
+    }
+  },
+  components: {
+    CreateOrEdit
+  }
+}
+</script>
+
+<style></style>
